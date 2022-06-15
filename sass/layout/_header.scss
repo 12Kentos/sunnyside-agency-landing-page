@@ -1,0 +1,158 @@
+.header {
+  min-height: 95vh;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.4rem;
+    padding-left: 4rem;
+    padding-right: 4.8rem;
+    margin-bottom: 10.5rem;
+
+    &__mobile {
+      display: none;
+      width: 2.4rem;
+      height: 1.8rem;
+      background-color: $color-white;
+      mask-size: 2.4rem 1.8rem;
+      -webkit-mask-size: 2.4rem 1.8rem;
+      mask-image: url(../images/icon-hamburger.svg);
+      -webkit-mask-image: url(../images/icon-hamburger.svg);
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+    }
+
+    &__link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 2.5rem;
+        letter-spacing: -0.13px;
+      }
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4.7rem;
+    }
+
+    &__btn {
+      &:link,
+      &:visited {
+        @include font-fraunces;
+        text-transform: uppercase;
+        padding: 1.55rem 3.6rem;
+        background-color: $color-white;
+        color: $color-font-primary;
+        border-radius: 2.8rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.11px;
+      }
+
+      &:hover,
+      &:active {
+        background-color: rgba($color-white, 0.25);
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.heading-primary {
+  @include font-fraunces;
+  text-transform: uppercase;
+  font-size: 4vw;
+  font-weight: 900;
+  line-height: 6.905rem;
+  letter-spacing: 0.875rem;
+  margin-bottom: 9.654rem;
+  color: $color-white;
+}
+
+@media (max-width: 43.75em) {
+  .heading-primary {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .header {
+    position: relative;
+    background-image: url(../images/mobile/image-header.jpg);
+
+    &-nav {
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
+      &__mobile {
+        display: block;
+      }
+
+      &__menu {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+      }
+
+      &__link {
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: $color-font-secondary;
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 2.5rem;
+          letter-spacing: -0.14px;
+        }
+      }
+
+      &__btn {
+        &:link,
+        &:visited {
+          @include font-fraunces;
+          text-transform: uppercase;
+          padding: 1.55rem 3.6rem;
+          background-color: $color-mobile-nav-btn;
+          color: $color-font-primary;
+          border-radius: 2.8rem;
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 2.5rem;
+          letter-spacing: -0.11px;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  display: flex;
+  width: 87.5vw;
+  height: 32.9rem;
+  background-color: $color-white;
+  top: 8rem;
+  right: 2.5rem;
+  -webkit-clip-path: polygon(0 80%, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 10%, 90% 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.active-mobile {
+  background-color: rgba($color-white, 0.5);
+}

@@ -1,0 +1,29 @@
+.section-why {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.section-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-collage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 43.75em) {
+  .section-why {
+    grid-template-columns: 1fr;
+  }
+
+  .section-services {
+    grid-template-columns: 1fr;
+  }
+
+  .section-collage {
+    grid-template-columns: 1fr 1fr;
+  }
+}

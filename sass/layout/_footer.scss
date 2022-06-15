@@ -1,0 +1,83 @@
+.footer {
+  background-color: $color-footer-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__company-logo {
+    margin-top: 7.2rem;
+    margin-bottom: 4rem;
+    width: 17rem;
+    height: 3.3rem;
+    background-color: $color-footer-logo;
+    mask-image: url(../images/logo.svg);
+    -webkit-mask-image: url(../images/logo.svg);
+    mask-size: 17rem 3.3rem;
+    -webkit-mask-size: 17rem 3.3rem;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 5.7rem;
+    margin-bottom: 8.8rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 2.5rem;
+      letter-spacing: -0.13px;
+      color: $color-footer-links;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-white;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    gap: 2.8rem;
+    margin-bottom: 7.2rem;
+  }
+
+  &__logo {
+    width: 2rem;
+    height: 2rem;
+    background-color: $color-footer-logo;
+    mask-size: 2rem 2rem;
+    -webkit-mask-size: 2rem 2rem;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    &--facebook {
+      mask-image: url(../images/icon-facebook.svg);
+      -webkit-mask-image: url(../images/icon-facebook.svg);
+    }
+    &--instagram {
+      mask-image: url(../images/icon-instagram.svg);
+      -webkit-mask-image: url(../images/icon-instagram.svg);
+    }
+    &--twitter {
+      mask-image: url(../images/icon-twitter.svg);
+      -webkit-mask-image: url(../images/icon-twitter.svg);
+    }
+    &--pinterest {
+      mask-image: url(../images/icon-pinterest.svg);
+      -webkit-mask-image: url(../images/icon-pinterest.svg);
+    }
+  }
+
+  &__logo {
+    &:hover,
+    &:active {
+      cursor: pointer;
+      background-color: $color-white;
+    }
+  }
+}

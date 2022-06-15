@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <img
+          src="images/logo.svg"
+          alt="company logo"
+          class="header-nav__logo"
+        />
+        <div class="header-nav__menu">
+          <a href="#" class="header-nav__link">About</a>
+          <a href="#" class="header-nav__link">Services</a>
+          <a href="#" class="header-nav__link">Projects</a>
+          <a href="#" class="header-nav__btn header-nav__link">Contact</a>
+        </div>
+        <div class="header-nav__mobile"></div>
+      </nav>
+      <h1 class="heading-primary">We are creatives</h1>
+      <img
+        src="images/icon-arrow-down.svg"
+        alt="Down arrow"
+        class="header__img"
+      />
+    </header>
+
+    <main>
+      <section class="section-why">
+        <div class="why__wrapper">
+          <div class="text-wrapper">
+            <h2 class="heading-secondary">Transform your brand</h2>
+            <p class="why__text">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#" class="why__link"
+              >Learn more
+              <div class="why__border why__border--yellow"></div>
+            </a>
+          </div>
+        </div>
+        <div class="why__img why__img--egg"></div>
+        <div class="why__img why__img--cup"></div>
+        <div class="why__wrapper">
+          <div class="text-wrapper">
+            <h2 class="heading-secondary">Stand out to the right audience</h2>
+            <p class="why__text">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#" class="why__link why__link--red"
+              >Learn more
+              <div class="why__border why__border--red"></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <seection class="section-services">
+        <div class="services__container services__container--graphic-design">
+          <h3 class="heading-tertiary heading-tertiary-G-design">
+            Graphic design
+          </h3>
+          <p class="services__text services__text-G-design">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+        <div class="services__container services__container--photography">
+          <h3 class="heading-tertiary heading-tertiary-P-design">
+            Photography
+          </h3>
+          <p class="services__text services__text-P-design">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </seection>
+
+      <section class="section-testimonies">
+        <h4 class="heading-quaternary">Client testimonials</h4>
+        <div class="testimonies__wrapper">
+          <div class="testimonies__container">
+            <img
+              src="images/image-emily.jpg"
+              alt="emily headshot"
+              class="testimonies__img"
+            />
+            <p class="testimonies__text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p class="testimonies__author">Emily R.</p>
+            <p class="testimonies__position">Marketing Director</p>
+          </div>
+
+          <div class="testimonies__container">
+            <img
+              src="images/image-thomas.jpg"
+              alt="thomas headshot"
+              class="testimonies__img"
+            />
+            <p class="testimonies__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="testimonies__author">Thomas S.</p>
+            <p class="testimonies__position">Chief Operating Officer</p>
+          </div>
+
+          <div class="testimonies__container">
+            <img
+              src="images/image-jennie.jpg"
+              alt="jennie headshot"
+              class="testimonies__img"
+            />
+            <p class="testimonies__text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <p class="testimonies__author">Jennie F.</p>
+            <p class="testimonies__position">Business Owner</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-collage">
+        <div class="collage__img collage__img--milk"></div>
+        <div class="collage__img collage__img--orange"></div>
+        <div class="collage__img collage__img--cone"></div>
+        <div class="collage__img collage__img--sugar"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__company-logo"></div>
+      <div class="footer__menu">
+        <a href="#" class="footer__link">About</a>
+        <a href="#" class="footer__link">Services</a>
+        <a href="#" class="footer__link">Projects</a>
+      </div>
+      <div class="footer__logos">
+        <div class="footer__logo footer__logo--facebook"></div>
+        <div class="footer__logo footer__logo--instagram"></div>
+        <div class="footer__logo footer__logo--twitter"></div>
+        <div class="footer__logo footer__logo--pinterest"></div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- About
+
+About
+Services
+Projects
+Contact -->

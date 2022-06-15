@@ -1,0 +1,140 @@
+.why {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: -0.13px;
+    color: $color-font-secondary;
+    margin-bottom: 4rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      @include font-fraunces;
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 2.5rem;
+      letter-spacing: 1px;
+      color: $color-font-primary;
+      text-transform: uppercase;
+    }
+
+    &:hover .why__border,
+    &:active .why__border {
+      &--yellow {
+        background-color: $color-primary;
+        z-index: -1;
+      }
+
+      &--red {
+        background-color: $color-secondary;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__border {
+    position: absolute;
+    height: 1rem;
+    width: 13.7rem;
+    border-radius: 2.8rem;
+    transform: translate(-0.95rem, -1rem);
+
+    &--yellow {
+      background-color: rgba($color-primary, 0.25);
+    }
+
+    &--red {
+      background-color: rgba($color-secondary, 0.25);
+    }
+  }
+
+  &__img {
+    min-height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--egg {
+      background-image: url(../images/desktop/image-transform.jpg);
+    }
+
+    &--cup {
+      background-image: url(../images/desktop/image-stand-out.jpg);
+    }
+  }
+}
+
+.heading-secondary {
+  @include font-fraunces;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.932rem;
+  letter-spacing: -0.29px;
+  color: $color-font-primary;
+  margin-bottom: 3.2rem;
+}
+
+.text-wrapper {
+  max-width: 61%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (max-width: 43.75em) {
+  .why {
+    &__wrapper {
+      height: 43.7rem;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__border {
+      position: absolute;
+      height: 1rem;
+      width: 13.7rem;
+      border-radius: 2.8rem;
+      transform: translate(-0.95rem, -1rem);
+    }
+
+    &__img {
+      min-height: 31.2rem;
+
+      &--egg {
+        background-image: url(../images/mobile/image-transform.jpg);
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      &--cup {
+        background-image: url(../images/mobile/image-stand-out.jpg);
+      }
+    }
+  }
+
+  .heading-secondary {
+    @include font-fraunces;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .text-wrapper {
+    max-width: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
